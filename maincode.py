@@ -62,7 +62,7 @@ def title_screen():
     if bg_image:
         canvas.create_image(0, 0, image=bg_image, anchor="nw")
     canvas.create_text(400, 100, text="Doctor D",
-                       font=("Comic Sans MS", 40), fill="yellow")
+                       font=("Comic Sans MS", 40), fill="tomato")
 #disclaimer
     canvas.create_text(
         400, 180,
