@@ -1,6 +1,10 @@
-#GUI
+#GUI - I can already tell I'm going to have fun on this project         :D
+
+#first, here's a quick print thing to make sure it actually works as it should.
 
 print("Program Started")
+
+#alright, here's the actual GUI
 import tkinter as tk
 from tkinter import messagebox
 from PIL import Image, ImageTk
@@ -42,7 +46,7 @@ illness_db = {
     "Ehlers-Danlos Syndrome": {"symptoms": ["hypermobility", "stretchy skin", "fragile skin", "joint pain"], "description":"Rare inherited conditions that affect tissues", "treatment":"physiotherapists and occupational therapists can help, however there is no specific cure due to the many different types of EDS there are"},
     "Epilepsy": {"symptoms": ["seizures", "fainting", "becoming limp", "unusual behaviour", "fidgeting", "unawareness"], "description":"A condition that affects the brain and causes seizures", "treatment":"check-ups, talk to your local doctor-dude (not Doc. D) and ask for a care plan"},
     "Eye Cancer": {"symptoms": ["bulging", "blurred vision", "floaters", "loss of vision", "irritation"], "description":"Mutated cells in the tissues of the eyes", "treatment":"Chop out the eye, blast it with radiation, or have a pricey surgery"},
-    "Pregnancy": {"symptoms": ["bulging", "fainting", "unusual behaviour", "moving unnaturally", "joint pain", "fatigue", "confusion"], "description":"A parasite inside a stomach", "treatment":"Do you wanna keep it? Yes? Just wait for a few months. If not, just grab a box cutter or something"},
+    "Pregnancy": {"symptoms": ["bulging", "fainting", "unusual behaviour", "minor death", "sleep problems", "low mood", "moving unnaturally", "joint pain", "fatigue", "confusion"], "description":"A parasite inside a stomach", "treatment":"Do you wanna keep it? Yes? Just wait for a few months. If not, just grab a box cutter or something"},
     "Psychotic Depression": {"symptoms": ["fatigue", "sleep problems", "unusual behaviour", "low mood"], "description":"Severe depression alongside hallucinations and whatnot", "treatment":"Therapy, and take a break from coding"},
     "Rabies": {"symptoms": ["numbness", "restlessness", "sleep problems", "pale skin", "deep wound"], "description":"A dangerous infection "},
     "Decapitation": {"symptoms": ["minor death", "sleep problems", "pale skin", "fainting", "numbness", "deep wound", "joint pain", "low mood", "cannot stand", "hearing loss", "bleeding"], "description":"Head go bye bye", "treatment":"Hope there's a doctor that's good at sewing"},
@@ -186,7 +190,7 @@ def symptom_screen():
     tk.Button(root, text="ENTER", bg="lime", font=("Comic Sans MS", 12), command=results_screen).pack(pady=10)
     tk.Button(root, text=" BACK ", bg="orange", font=("Comic Sans MS", 12), command=title_screen).pack()
 
-#here we can see me start to get sloppy, as I have been doing this for a few hours too many. Excuse me for a minute while I scream at the top of my lungs into a pineapple.
+#here we can see me start to get sloppy, as I have been doing this for a few hours too many. Excuse me for a minute while I scream at the top of my lungs into a pineapple. Meant to say pillow. Why am I not just changing pineapple into pillow instead of writing this? I don't know. Am I crazy? I'll ask Doctor D.
 
 def find_matches(selected):
     return[
@@ -194,7 +198,7 @@ def find_matches(selected):
         if all(symptom in data["symptoms"] for symptom in selected)
     ]
 
-#fun fact! on the last tk.Button, I accidentally wrote it as gk.button, and it took me over half an hour to find! If there's a god of coding, he sure hates me! I COULD HAVE SWORN I SAW IT BEFORE I SWEAR TO GOD AAAAAAAAAAHHHHHHHHHHH anyways-
+#fun fact! on the last tk.Button, I accidentally wrote it as gk.button, and it took me over half an hour to find! If there's a god of coding, they sure hate me! I COULD HAVE SWORN I SAW IT BEFORE I SWEAR TO GOD AAAAAAAAAAHHHHHHHHHHH anyways-
 
 #result screen (finally)
 
@@ -230,6 +234,7 @@ root.mainloop()
 
 #               if running == True:
 #                   notrunning == False
-
+#
 #Can't remember where I saw it but I find it pretty funny haha. 
-#Anyways, Hope you enjoyed glaring at the unimportant part of this project, and I will continue adding more and more and more different illnesses!
+#Anyways, Hope you enjoyed glaring at the unimportant part of this project, and I will continue adding more and more and more different illnesses! Don't worry though, as I will not include the added illnesses as extra time for devlogs, because it would be cheating to add more and more time by just adding illnesses. Whenever I need to add illnesses, I will just write out the code in a seperate area, where time isn't tracked, and then copy and paste it. After all, there are thousands of illnesses I could add, and it would be unfair if I spent hundreds of hours doing things which do next to nothing. I have morals, ya' know.
+#What am I even doing anymore. I'm writing this instead of revising for my GCSEs. But then if I know what I'm doing, why did I ask what I'm doing? Am I just a madman stumbling my way through a cave of code? I wrote this and I still have no idea how it works. My mind is in pieces.
