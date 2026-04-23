@@ -17,3 +17,4 @@ How to Run:
         - Open your terminal / command prompt and navigate to that folder.
         - Run the program with "python main.py", or if multiple versions are installed, "python3 main.py".
         From then on, it should (I would like to highly emphasise the use of the word SHOULD) function!
+ 
