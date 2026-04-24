@@ -128,14 +128,6 @@ def title_screen():
         
         canvas.create_text(
             width // 2,
-            height // 6,
-            text="Doctor D",
-            font=("Comic Sans MS", 40),
-            fill="black"
-        )
-        
-        canvas.create_text(
-            width // 2,
             height // 3,
             text="DISCLAIMER!\nNot Medically Accurate! \nAlways consult a professional (excluding Doc. D)",
             font=("Comic Sans MS", 12, "bold"),
@@ -177,8 +169,8 @@ def symptom_screen():
             variable=var,
             font=("Comic Sans MS", font_size)
         )
-        
-        cb.grid(row=row, column=col, sticky="w", padx=5, pady=2)
+     
+        cb.grid(ro=w=row, column=col, sticky="w", padx=5, pady=2)
         
         symptom_vars[s] = var
         
@@ -186,7 +178,7 @@ def symptom_screen():
         if col >= columns:
             col = 0
             row += 1
-    
+     
     tk.Button(root, text="ENTER", bg="lime", font=("Comic Sans MS", 12), command=results_screen).pack(pady=10)
     tk.Button(root, text=" BACK ", bg="orange", font=("Comic Sans MS", 12), command=title_screen).pack()
 
@@ -238,3 +230,4 @@ root.mainloop()
 #Can't remember where I saw it but I find it pretty funny haha. 
 #Anyways, Hope you enjoyed glaring at the unimportant part of this project, and I will continue adding more and more and more different illnesses! Don't worry though, as I will not include the added illnesses as extra time for devlogs, because it would be cheating to add more and more time by just adding illnesses. Whenever I need to add illnesses, I will just write out the code in a seperate area, where time isn't tracked, and then copy and paste it. After all, there are thousands of illnesses I could add, and it would be unfair if I spent hundreds of hours doing things which do next to nothing. I have morals, ya' know.
 #What am I even doing anymore. I'm writing this instead of revising for my GCSEs. But then if I know what I'm doing, why did I ask what I'm doing? Am I just a madman stumbling my way through a cave of code? I wrote this and I still have no idea how it works. My mind is in pieces.
+#
