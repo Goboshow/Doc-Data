@@ -170,7 +170,7 @@ def symptom_screen():
             font=("Comic Sans MS", font_size)
         )
      
-        cb.grid(ro=w=row, column=col, sticky="w", padx=5, pady=2)
+        cb.grid(row=row, column=col, sticky="w", padx=5, pady=2)
         
         symptom_vars[s] = var
         
